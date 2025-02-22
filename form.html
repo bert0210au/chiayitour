@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>意見表單</legend>
+            <p>
+                <label for="u_name">姓名:</label>
+                <input type="text" id="u_name" name="u_name" placeholder="請填入姓名" required>
+            </p>
+            <p>
+                <label for="u_email">Email:</label>
+                <input type="email" id="u_email" name="u_email" placeholder="請填入Email" required>
+            </p>
+            <p>
+                性別：
+                <input type="radio" id="u_gender1" name="u_gender" value="male" required><label for="u_gender1">男性</label>
+                <input type="radio" id="u_gender2" name="u_gender" value="male" required><label for="u_gender2">女性</label>
+            </p>
+            <p>
+                從何得知：
+                <input type="checkbox" id="how1" name="how1" value="paper"><label for="how1">報紙</label>
+                <input type="checkbox" id="how2" name="how2" value="web"><label for="how2">網路</label>
+                <input type="checkbox" id="how3" name="how3" value="friends"><label for="how3">朋友</label>
+                <input type="checkbox" id="how4" name="how4" value="other"><label for="how4">其他</label>
+            </p>
+            <p>
+                <label for="u_age">年齡</label>
+                <select id="u_age" name="u_age" required>
+                    <option value="" selected>請選擇</option>
+                    <option value="down10">10 歲(含)以下</option>
+                    <option value="11-20">11~20 歲</option>
+                    <option value="21-30">21~30 歲</option>
+                    <option value="31-40">31~40 歲</option>
+                    <option value="41-50">41~50 歲</option>
+                    <option value="up50">50 歲以上</option>
+                </select>
+            </p>
+            <p>
+                <label for="u_message">內容</label>
+                <textarea id="u_message" name="u_message" rows="5" plac eholder="留言內容" required></textarea>
+            </p>
+            <p>
+                <button type="submit">送出留言</button>
+            </p>
+        </fieldset>
+
+        <hr>
+        <p><label>姓名:<input type="text" name="name"></label></p>
+        <p><label for="myemailid">e-mail:</label><input type="email" id="myemailid" name="myemailname"></p>
+        <p><input type="password" name="password"></p>
+        <p><input type="search" name="search"></p>
+        <p><input type="tel" name="phone"></p>
+        <p><input type="url" name="url"></p>
+        <p><input type="hidden" name="url"></p>
+        <p><input type="date" name="date"></p>
+        <p><input type="color" name="color"></p>
+        <p><input type="file" name="upload-file"></p>
+        <p><input type="number" name="sigle-number"></p>
+        <p><input type="range" min="0" max="5" name="range-number"></p>
+        <!-- 單選 -->
+        <div>
+            性別：
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">男性</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">女性</label>
+        </div>
+        <!-- 複選 -->
+        <div>
+            興趣：
+
+            <input type="checkbox" name="interest" id="sport">
+            <label for="sport">運動</label>
+            <input type="checkbox" name="interest" id="reading">
+            <label for="reading">閱讀</label>
+        </div>
+
+    </form>
+</body>
+
+</html>
